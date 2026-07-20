@@ -1,62 +1,240 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy – Squibbi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Squibbi">
+  <meta name="theme-color" content="#0f172a">
+  <title>Privacy Policy | Squibbi</title>
   <style>
-    :root { --maxw: 780px; }
-    html,body { margin:0; padding:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; }
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
-    h1 { font-size: 1.8rem; margin: 0 0 8px; }
-    h2 { font-size: 1.2rem; margin-top: 24px; }
-    a { color: inherit; }
-    .meta { color:#666; font-size:0.95rem; }
-    .card { background:#f8f8f8; border-radius: 10px; padding:16px; }
-    footer { margin-top:32px; color:#666; font-size:0.9rem; }
-    @media (prefers-color-scheme: dark) {
-      body { background:#0b0b0b; color:#f1f1f1; }
-      .card { background:#151515; }
-      .meta, footer { color:#aaa; }
+    :root {
+      --bg: #0b1120;
+      --panel: #111827;
+      --panel-2: #182235;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 34rem),
+        linear-gradient(180deg, #0b1120 0%, #0f172a 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+    .hero {
+      background: linear-gradient(145deg, rgba(30,41,59,.96), rgba(15,23,42,.96));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(28px, 5vw, 52px);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #bfdbfe;
+      background: rgba(59,130,246,.12);
+      border: 1px solid rgba(96,165,250,.20);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(2.1rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+    .updated {
+      color: var(--muted);
+      margin: 0;
+    }
+    .intro {
+      margin-top: 28px;
+      font-size: 1.03rem;
+    }
+    .notice {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: rgba(96,165,250,.08);
+      border-radius: 12px;
+    }
+    section {
+      background: rgba(17,24,39,.92);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: clamp(22px, 4vw, 34px);
+      margin: 18px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,.16);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.25rem, 3vw, 1.65rem);
+      line-height: 1.25;
+      color: #f8fafc;
+    }
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 1.3rem;
+    }
+    li { margin: 8px 0; }
+    .contact-card {
+      margin-top: 18px;
+      padding: 18px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+    .contact-card p { margin: 8px 0; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 12px 0;
+      font-size: .92rem;
+    }
+    .top-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,.03);
+    }
+    @media (max-width: 560px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+      }
+      .hero, section { border-radius: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --panel-2: #f1f5f9;
+        --text: #1f2937;
+        --muted: #64748b;
+        --accent: #2563eb;
+        --border: rgba(15,23,42,.10);
+        --shadow: 0 18px 55px rgba(15,23,42,.10);
+      }
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(59,130,246,.12), transparent 34rem),
+          linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+      }
+      .hero, section { background: rgba(255,255,255,.94); }
+      h2 { color: #0f172a; }
+      .eyebrow { color: #1d4ed8; }
     }
   </style>
 </head>
-<body>
-  <main class="wrap">
-    <h1>Privacy Policy</h1>
-    <p class="meta"><strong>Last updated:</strong> 2026-07-06</p>
-    <p>This policy explains how the app <strong>Squibbi</strong>, developed by <strong>Elefterios Gabriel Ghidan</strong> (“we”), handles user data.</p>
-    <div class="card">
-      <p><strong>At a glance:</strong> the app is paid and <strong>does not collect, store, or share</strong> any personal data.</p>
-    </div>
+<body id="top">
+  <main class="page">
+    <header class="hero">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated"><strong>Last Updated:</strong> July 6, 2026</p>
+      <div class="intro">
+        <p>This Privacy Policy explains how <strong>Squibbi</strong>, developed by <strong>Elefterios Gabriel Ghidan</strong> (the “Developer,” “I,” “me,” or “my”), handles information in connection with the Game.</p>
+        <div class="notice">
+          <strong>At a glance:</strong> Squibbi is a paid, offline game and does not collect, store, use, or share personal data.
+        </div>
+      </div>
+    </header>
 
-    <h2>Data collection</h2>
-    <p>The app does not collect personal, technical, or usage information. We do not use cookies, ad SDKs, analytics, or third‑party tracking technologies.</p>
+    <section>
+      <h2>1. Data Collection</h2>
+      <p>The Game does not collect personal information, technical information, device identifiers, diagnostic information, or usage data.</p>
+      <p>The Game does not use cookies, advertising software development kits, analytics services, or third-party tracking technologies.</p>
+    </section>
 
-    <h2>Accounts, in‑app purchases, and ads</h2>
-    <ul>
-      <li>No account creation is required.</li>
-      <li>No in‑app purchases.</li>
-      <li>No third‑party advertising.</li>
-    </ul>
+    <section>
+      <h2>2. Accounts, Purchases, and Advertising</h2>
+      <ul>
+        <li>No account creation or user registration is required.</li>
+        <li>The Game does not contain in-app purchases.</li>
+        <li>The Game does not display third-party advertising.</li>
+      </ul>
+    </section>
 
-    <h2>Sharing with third parties</h2>
-    <p>We do not share any data with third parties. Any information handled by the app store provider (e.g., Apple) is processed under their own privacy policies, separate from this app.</p>
+    <section>
+      <h2>3. Offline Functionality</h2>
+      <p>The Game is designed to operate offline and does not require an internet connection for normal gameplay.</p>
+      <p>Your device or the platform through which you obtained the Game may independently connect to the internet for functions such as downloading, installation, updates, licensing, payment processing, backups, or platform security. Those activities are controlled by the relevant platform provider and not by the Game.</p>
+    </section>
 
-    <h2>Security</h2>
-    <p>Since the app does not process personal data, we do not retain information that could be accessed without authorization.</p>
+    <section>
+      <h2>4. Sharing with Third Parties</h2>
+      <p>Because the Game does not collect personal data, the Developer does not sell, rent, disclose, or share personal data with third parties.</p>
+      <p>Information processed independently by an app store or platform provider, such as Apple App Store or Google Play, is governed by that provider’s own privacy policy and terms.</p>
+    </section>
 
-    <h2>Children’s privacy</h2>
-    <p>The app is suitable for a general audience and does not require registration. No data about children is collected.</p>
+    <section>
+      <h2>5. Data Retention and Security</h2>
+      <p>The Developer does not retain personal data through the Game.</p>
+      <p>Because no personal data is collected or stored by the Game, there is no personal-data database associated with the Game that could be accessed without authorization.</p>
+    </section>
 
-    <h2>Changes</h2>
-    <p>We may update this policy from time to time. The current version will always be available on this page and identified by the “Last updated” date.</p>
+    <section>
+      <h2>6. Children’s Privacy</h2>
+      <p>The Game does not require registration and does not knowingly collect personal data from children or from any other users.</p>
+      <p>If you believe that information has been provided to the Developer outside the Game by a child, please use the contact information below.</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>For any questions, contact us at <a href="mailto:ggeasist@gmail.com">ggeasist@gmail.com</a>.</p>
+    <section>
+      <h2>7. Your Privacy Rights</h2>
+      <p>Depending on where you live, you may have rights concerning personal data. However, because the Game does not collect or retain personal data, the Developer generally has no Game-related personal data to access, correct, delete, or provide.</p>
+      <p>This does not affect any rights you may have in relation to information processed independently by an app store or platform provider.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>This Privacy Policy may be updated from time to time to reflect changes to the Game, legal requirements, or clarification of existing practices.</p>
+      <p>The current version will remain available on this page and will be identified by the “Last Updated” date shown above.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>For questions about this Privacy Policy or the Game’s privacy practices, please contact:</p>
+      <div class="contact-card">
+        <p><strong>Game:</strong> Squibbi</p>
+        <p><strong>Developer:</strong> Elefterios Gabriel Ghidan</p>
+        <p><strong>Email:</strong> <a href="mailto:ggeasist@gmail.com">ggeasist@gmail.com</a></p>
+      </div>
+    </section>
 
     <footer>
-      <p>© 2026 Elefterios Gabriel Ghidan — All rights reserved.</p>
+      <p>© 2026 Elefterios Gabriel Ghidan. All rights reserved.</p>
+      <a class="top-link" href="#top">Back to top ↑</a>
     </footer>
   </main>
 </body>
