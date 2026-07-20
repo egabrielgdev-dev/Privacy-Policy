@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms and Conditions for Squibbi">
+  <meta name="theme-color" content="#0f172a">
+  <title>Terms and Conditions | Squibbi</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111827;
+      --panel-2: #182235;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 34rem),
+        linear-gradient(180deg, #0b1120 0%, #0f172a 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, rgba(30,41,59,.96), rgba(15,23,42,.96));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(28px, 5vw, 52px);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #bfdbfe;
+      background: rgba(59,130,246,.12);
+      border: 1px solid rgba(96,165,250,.20);
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(2.1rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .updated {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .intro {
+      margin-top: 28px;
+      font-size: 1.03rem;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: rgba(96,165,250,.08);
+      border-radius: 12px;
+    }
+
+    section {
+      background: rgba(17,24,39,.92);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: clamp(22px, 4vw, 34px);
+      margin: 18px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,.16);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.25rem, 3vw, 1.65rem);
+      line-height: 1.25;
+      color: #f8fafc;
+    }
+
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 1.3rem;
+    }
+
+    li { margin: 8px 0; }
+
+    .contact-card {
+      margin-top: 18px;
+      padding: 18px;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .contact-card p { margin: 8px 0; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 12px 0;
+      font-size: .92rem;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,.03);
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+      }
+
+      .hero, section {
+        border-radius: 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --panel-2: #f1f5f9;
+        --text: #1f2937;
+        --muted: #64748b;
+        --accent: #2563eb;
+        --border: rgba(15,23,42,.10);
+        --shadow: 0 18px 55px rgba(15,23,42,.10);
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(59,130,246,.12), transparent 34rem),
+          linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+      }
+
+      .hero {
+        background: rgba(255,255,255,.94);
+      }
+
+      section {
+        background: rgba(255,255,255,.94);
+      }
+
+      h2 { color: #0f172a; }
+      .eyebrow { color: #1d4ed8; }
+    }
+  </style>
+</head>
+<body id="top">
+  <main class="page">
+    <header class="hero">
+      <span class="eyebrow">Legal</span>
+      <h1>Terms and Conditions</h1>
+      <p class="updated"><strong>Last Updated:</strong> [Month Day, Year]</p>
+
+      <div class="intro">
+        <p>These Terms and Conditions (“Terms”) govern the downloading, installation, purchase, access to, and use of <strong>Squibbi</strong> (the “Game”).</p>
+
+        <p>The Game is provided by <strong>ElefteriosGabrielGhidan</strong>, an independent software developer (the “Developer,” “I,” “me,” “my,” “we,” “us,” or “our”).</p>
+
+        <div class="notice">
+          By downloading, installing, purchasing, accessing, or using the Game, you acknowledge that you have read and agree to be bound by these Terms. If you do not agree to these Terms, you must not download, install, access, or use the Game.
+        </div>
+      </div>
+    </header>
+
+    <section id="section-1"><h2>1. Eligibility</h2><p>You may use the Game only if you have the legal capacity to enter into a binding agreement under the laws applicable to you.</p>
+<p>If you are under the age of legal majority in your country of residence, you may purchase or use the Game only with the permission and supervision of a parent or legal guardian.</p></section>
+<section id="section-2"><h2>2. License</h2><p>Subject to your compliance with these Terms and completion of the applicable purchase, the Developer grants you a limited, personal, non-exclusive, non-transferable, non-sublicensable license to download, install, and use the Game solely for your personal and non-commercial entertainment.</p>
+<p>The Game is licensed, not sold. Your purchase gives you the right to use the Game in accordance with these Terms and the applicable rules of the digital storefront or platform through which you obtained it.</p>
+<p>This license does not transfer to you any ownership rights in the Game or in any related intellectual property.</p></section>
+<section id="section-3"><h2>3. Intellectual Property</h2><p>The Game and all materials contained in or associated with it, including, without limitation, its software, object code, source code, gameplay systems, graphics, artwork, illustrations, animations, characters, designs, music, sound effects, text, dialogue, logos, names, trademarks, and other content, are owned by or licensed to the Developer.</p>
+<p>The Game and its content are protected by applicable copyright, trademark, and other intellectual property laws and international treaties.</p>
+<p>Except for the limited license expressly granted under these Terms, no rights are granted to you in relation to the Game or its content.</p></section>
+<section id="section-4"><h2>4. Acceptable Use</h2><p>You must not, directly or indirectly:</p>
+<ul>
+<li>copy, reproduce, republish, distribute, sell, rent, lease, sublicense, or otherwise commercially exploit the Game or any part of it;</li>
+<li>modify, translate, adapt, merge, alter, or create derivative works based on the Game;</li>
+<li>reverse engineer, decompile, disassemble, decode, or otherwise attempt to obtain or reconstruct the source code of the Game, except to the limited extent expressly permitted by applicable law;</li>
+<li>bypass, disable, interfere with, or circumvent any technical protection, security feature, access restriction, or digital rights management measure;</li>
+<li>remove, obscure, alter, or interfere with any copyright, trademark, attribution, or other proprietary notice contained in the Game;</li>
+<li>use the Game for any unlawful, fraudulent, abusive, or unauthorized purpose;</li>
+<li>use the Game in a manner that infringes the rights of the Developer or any third party.</li>
+</ul>
+<p>Nothing in this section restricts any act that cannot lawfully be prohibited under applicable mandatory law.</p></section>
+<section id="section-5"><h2>5. Device and System Requirements</h2><p>You are responsible for ensuring that your device, operating system, available storage, and other technical requirements are compatible with the Game before purchasing or installing it.</p>
+<p>The technical requirements and compatibility information displayed on the applicable storefront form part of the information provided in connection with your purchase.</p>
+<p>Compatibility may be affected by changes made by device manufacturers, operating-system providers, or storefront operators that are outside the Developer’s reasonable control.</p></section>
+<section id="section-6"><h2>6. Updates and Support</h2><p>The Developer may provide updates, patches, security fixes, compatibility changes, improvements, or other modifications to the Game.</p>
+<p>Where required by applicable law, the Developer will provide updates, including security updates, that are necessary to keep the Game in conformity with the applicable purchase contract for the legally required period.</p>
+<p>You are responsible for installing updates made available through the platform from which you obtained the Game. Failure to install an update within a reasonable period may affect the Game’s functionality, security, or compatibility.</p>
+<p>Except where required by applicable law or expressly promised at the time of purchase, the Developer does not guarantee that new features, additional content, or indefinite technical support will be provided.</p></section>
+<section id="section-7"><h2>7. Purchases, Payments, and Refunds</h2><p>The Game may be purchased through authorized third-party digital storefronts, such as Google Play or the Apple App Store.</p>
+<p>Prices, taxes, payment processing, billing, purchase confirmations, and refund procedures are generally administered by the storefront through which you purchased the Game and are subject to that storefront’s applicable terms and policies.</p>
+<p>Refund requests should ordinarily be submitted through the relevant storefront using its designated refund procedure.</p>
+<p>Nothing in these Terms excludes, restricts, or replaces any refund, remedy, withdrawal, conformity, or other consumer right that you may have under applicable mandatory law.</p></section>
+<section id="section-8"><h2>8. Consumer Rights and Legal Guarantees</h2><p>If you use the Game as a consumer, you may have mandatory legal rights concerning digital content, including rights relating to conformity, performance, updates, repair, replacement, price reduction, contract termination, or reimbursement.</p>
+<p>These rights vary depending on your country or region and are not excluded, restricted, or waived by these Terms.</p>
+<p>Any disclaimer, exclusion, or limitation contained in these Terms applies only to the extent permitted by applicable law.</p></section>
+<section id="section-9"><h2>9. Disclaimer of Warranties</h2><p>To the maximum extent permitted by applicable law, and without limiting any mandatory consumer rights or legal guarantees, the Game is provided on an “AS IS” and “AS AVAILABLE” basis.</p>
+<p>The Developer does not guarantee that the Game will:</p>
+<ul>
+<li>operate without interruption, delay, error, or defect;</li>
+<li>remain compatible with every device or every current or future version of an operating system;</li>
+<li>satisfy every user’s individual expectations or preferences;</li>
+<li>be completely free from technical issues or harmful components.</li>
+</ul>
+<p>Where applicable law does not permit the exclusion of certain warranties, those warranties are excluded only to the minimum extent permitted by law.</p></section>
+<section id="section-10"><h2>10. Limitation of Liability</h2><p>Nothing in these Terms excludes or limits liability that cannot legally be excluded or limited, including any liability arising from fraud, fraudulent misrepresentation, wilful misconduct, gross negligence where applicable, death or personal injury caused by negligence, or violation of mandatory consumer rights.</p>
+<p>Subject to the preceding paragraph and to the maximum extent permitted by applicable law, the Developer will not be liable for indirect, incidental, special, exemplary, punitive, or consequential damages arising out of or relating to the Game or the inability to use it.</p>
+<p>The Developer will not be responsible for loss or damage caused by:</p>
+<ul>
+<li>use of the Game contrary to these Terms or the instructions provided with it;</li>
+<li>unauthorized modifications to the Game or the user’s device;</li>
+<li>failure to install an update made available to the user, where the user was informed of the update and of the consequences of failing to install it;</li>
+<li>device defects, operating-system changes, third-party platform failures, or circumstances outside the Developer’s reasonable control.</li>
+</ul>
+<p>These limitations do not affect any remedy available to you under applicable mandatory law.</p></section>
+<section id="section-11"><h2>11. Third-Party Platforms</h2><p>The Game may be distributed through third-party platforms or storefronts.</p>
+<p>Your use of those platforms is governed by their respective terms, conditions, and policies. The Developer is not responsible for services operated solely by those third parties, including their payment systems, account systems, storefront availability, or platform-level technical functions.</p>
+<p>If there is a conflict between these Terms and mandatory terms imposed by the platform through which you obtained the Game, the applicable platform terms will govern only to the extent required for distribution through that platform.</p></section>
+<section id="section-12"><h2>12. Privacy</h2><p>Your use of the Game is also subject to the Game’s Privacy Policy, available at:</p>
+<a href="[Privacy Policy URL]">[Privacy Policy URL]</a>
+<p>The Privacy Policy explains whether and how information is accessed, collected, used, retained, or shared in connection with the Game.</p></section>
+<section id="section-13"><h2>13. Termination</h2><p>These Terms remain in effect for as long as you use the Game.</p>
+<p>You may terminate these Terms at any time by uninstalling the Game and permanently ceasing to use it.</p>
+<p>The Developer may terminate your license if you materially breach these Terms and, where the breach can be remedied, you fail to remedy it within a reasonable period after receiving notice.</p>
+<p>In cases of serious infringement, unlawful use, circumvention of technical protections, unauthorized distribution, or conduct causing material harm to the Developer or third parties, termination may take effect immediately where permitted by law.</p>
+<p>Upon termination resulting from your breach, you must cease using the Game and delete all copies in your possession or control.</p>
+<p>Termination does not affect rights or obligations that arose before termination or any provisions that, by their nature, are intended to survive termination.</p></section>
+<section id="section-14"><h2>14. Changes to the Game</h2><p>The Developer may modify the Game for legitimate reasons, including security, legal compliance, technical compatibility, error correction, platform requirements, or improvements.</p>
+<p>Any modification will be made without additional cost where required by applicable law and will not negatively affect the Game beyond what is reasonably necessary for the relevant legitimate purpose.</p>
+<p>Where required by applicable law, you will be informed clearly and in advance of modifications that materially and negatively affect your access to or use of the Game, including your available remedies.</p></section>
+<section id="section-15"><h2>15. Changes to These Terms</h2><p>The Developer may update these Terms where reasonably necessary, including to reflect:</p>
+<ul>
+<li>changes to the Game;</li>
+<li>changes in applicable laws or regulatory requirements;</li>
+<li>security or technical requirements;</li>
+<li>requirements imposed by an authorized distribution platform;</li>
+<li>corrections or clarifications that do not materially reduce your rights.</li>
+</ul>
+<p>The updated Terms will identify the date of the latest revision and will be made reasonably accessible.</p>
+<p>Changes will not apply retroactively unless required by law. Where required by applicable law, material changes will be communicated to users before they take effect.</p>
+<p>If you do not agree to a material update to these Terms, you must stop using the Game. This does not affect rights that arose before the updated Terms became effective.</p></section>
+<section id="section-16"><h2>16. Force Majeure</h2><p>The Developer will not be liable for a failure or delay in performing an obligation under these Terms where the failure or delay results from circumstances beyond the Developer’s reasonable control.</p>
+<p>Such circumstances may include natural disasters, fire, flood, war, terrorism, civil unrest, governmental action, power failures, widespread telecommunications failures, cyberattacks, platform outages, or failures of essential third-party infrastructure.</p>
+<p>This section does not limit any obligation or consumer right that cannot be excluded under applicable law.</p></section>
+<section id="section-17"><h2>17. Governing Law and Jurisdiction</h2><p>These Terms are governed by the applicable laws determined under relevant conflict-of-law rules.</p>
+<p>If you are a consumer, this choice of law does not deprive you of any mandatory protection granted by the laws of your country of habitual residence.</p>
+<p>Any dispute may be brought before the courts having jurisdiction under applicable law. If you are a consumer residing in the European Union, you may be entitled to bring proceedings before the competent courts of your country of residence.</p></section>
+<section id="section-18"><h2>18. Severability</h2><p>If any provision of these Terms is found to be unlawful, invalid, or unenforceable, that provision will be interpreted or limited to the minimum extent necessary to make it enforceable where possible.</p>
+<p>If this is not possible, the affected provision will be removed, and the remaining provisions will continue in full force and effect.</p></section>
+<section id="section-19"><h2>19. No Waiver</h2><p>A failure or delay by the Developer in exercising any right or remedy under these Terms does not constitute a waiver of that right or remedy.</p>
+<p>A waiver will be effective only if it is expressly made in writing and will apply only to the specific circumstances for which it is given.</p></section>
+<section id="section-20"><h2>20. Assignment</h2><p>You may not assign or transfer your rights or obligations under these Terms without the Developer’s prior written consent.</p>
+<p>The Developer may assign or transfer these Terms as part of a merger, acquisition, corporate reorganization, sale of the Game, or transfer of substantially all relevant business assets, provided that the transfer does not reduce any mandatory rights you have under applicable law.</p></section>
+<section id="section-21"><h2>21. Entire Agreement</h2><p>These Terms, together with the Privacy Policy and any mandatory terms of the storefront through which you obtained the Game, constitute the entire agreement between you and the Developer concerning your use of the Game.</p>
+<p>They replace any previous agreement, representation, or understanding concerning the same subject matter, except where such replacement is prohibited by applicable law.</p></section>
+<section id="section-22"><h2>22. Contact Information</h2><p>For questions, complaints, support requests, or legal notices concerning the Game or these Terms, please contact:</p>
+<div class="contact-card"><p><strong>Game:</strong> Squibbi</p><p><strong>Developer:</strong> ElefteriosGabrielGhidan (Independent Developer)</p><p><strong>Email:</strong> <a href="mailto:ggeasist@gmail.com">ggeasist@gmail.com/a></p></div></section>
+
+    <footer>
+      <p>© 2026 ElefteriosgabrielGhidan. All rights reserved.</p>
+      <a class="top-link" href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+</body>
+</html>
